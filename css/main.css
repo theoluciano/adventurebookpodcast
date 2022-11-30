@@ -1,0 +1,143 @@
+@import "variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.material-symbols-outlined {
+  font-size: 20px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-color);
+  position: fixed;
+  width: 100%;
+  padding: 24px 0;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.header > ul {
+  display: flex;
+  list-style: none;
+  padding-right: 24px;
+  gap: 40px;
+}
+
+.header-title {
+  padding-left: 24px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-weight: 500;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: solid 2px black;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.compass-needle {
+  width: 12px;
+  height: auto;
+}
+
+body {
+  background-color: var(--color-body-background);
+  max-height: 100%;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.content-wrapper{
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  padding: 16vh 0;
+  gap: 86px;
+  transform: translate(0, 20%);
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img {
+  width: 20%;
+  height: auto;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.26);
+  transition: all 300ms ease;
+}
+
+@media screen and (max-width: 500px){
+  .img {
+    width: 60%;
+  }
+}
+.img:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  color: black;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.heading-content {
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  gap: 16px;
+  font-size: 24px;
+  color: #6c6c6c;
+}
+
+.email-submit {
+  display: grid;
+  gap: 8px;
+  grid-auto-flow: column;
+}
+
+.input {
+  width: 410px;
+  font-size: 24px;
+  border-radius: 12px;
+  border: none;
+  padding: 16px 32px;
+  box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.16);
+}
+
+.submit-button {
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+}

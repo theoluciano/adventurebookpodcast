@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <header class="header">
+      <h1 class="header-title">
+        The Adventure Book Podcast
+        <img class="compass-needle" src="./images/compass-needle.svg" alt="A compass needle">
+      </h1>
+      <ul>
+        <a href="www.rolemodelsoftware.com">
+          <li class="header-link">
+          <span class="material-symbols-outlined">headphones</span>
+          Listen
+          </li>
+        </a>
+        <a href="www.rolemodelsoftware.com">
+          <li class="header-link">
+            <span class="material-symbols-outlined">lightbulb</span>
+            About
+          </li>
+        </a>
+      </ul>
+    </header>
+    <div class="content-wrapper">
+      {{ content }}
+  </body>
+</html>
